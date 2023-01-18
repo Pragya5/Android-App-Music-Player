@@ -1,0 +1,47 @@
+
+XML CODE FOR RESTORING DEAFULT SETTINGS
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+
+&lt;LinearLayout
+xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+xmlns:dslv=&quot;http://schemas.android.com/apk/res-auto&quot;
+android:orientation=&quot;vertical&quot;
+android:divider=&quot;?android:attr/dividerHorizontal&quot;
+android:showDividers=&quot;middle&quot;
+android:layout_height=&quot;fill_parent&quot;
+android:layout_width=&quot;fill_parent&quot;&gt;
+&lt;com.mobeta.android.dslv.DragSortListView
+android:id=&quot;@+id/list&quot;
+android:divider=&quot;@drawable/inset_divider&quot;
+android:dividerHeight=&quot;1dip&quot;
+android:layout_height=&quot;0px&quot;
+android:layout_width=&quot;fill_parent&quot;
+android:layout_weight=&quot;1&quot;
+android:choiceMode=&quot;multipleChoice&quot;
+dslv:drag_enabled=&quot;true&quot;
+dslv:drag_start_mode=&quot;onMove&quot;
+dslv:float_background_color=&quot;?float_color&quot;
+dslv:drag_handle_id=&quot;@+id/dragger&quot; /&gt;
+&lt;LinearLayout
+style=&quot;?android:attr/buttonBarStyle&quot;
+android:layout_width=&quot;fill_parent&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:orientation=&quot;horizontal&quot;&gt;
+&lt;Button
+
+style=&quot;?android:attr/buttonBarButtonStyle&quot;
+android:id=&quot;@+id/restore_default&quot;
+android:layout_width=&quot;0px&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:layout_weight=&quot;1&quot;
+android:text=&quot;@string/restore_default&quot; /&gt;
+&lt;Button
+style=&quot;?android:attr/buttonBarButtonStyle&quot;
+android:id=&quot;@+id/done&quot;
+android:layout_width=&quot;0px&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:layout_weight=&quot;1&quot;
+android:text=&quot;@string/done&quot; /&gt;
+&lt;/LinearLayout&gt;
+&lt;/LinearLayout&gt;

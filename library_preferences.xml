@@ -1,0 +1,187 @@
+
+
+XML CODE FOR MEDIA LIBRARY PREFERENCES
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+
+&lt;ScrollView xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+android:layout_width=&quot;fill_parent&quot;
+android:layout_height=&quot;fill_parent&quot; &gt;
+
+&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+xmlns:tools=&quot;http://schemas.android.com/tools&quot;
+android:layout_width=&quot;match_parent&quot;
+android:layout_height=&quot;match_parent&quot;
+android:paddingTop=&quot;5dp&quot;
+android:orientation=&quot;vertical&quot; &gt;
+
+&lt;TextView
+style=&quot;?android:attr/listSeparatorTextViewStyle&quot;
+android:textColor=&quot;?overlay_foreground_color&quot;
+android:text=&quot;@string/media_scan_preferences&quot; /&gt;
+&lt;CheckBox android:id=&quot;@+id/media_scan_group_albums&quot;
+android:layout_width=&quot;wrap_content&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:text=&quot;@string/media_scan_group_albums&quot; /&gt;
+&lt;CheckBox android:id=&quot;@+id/media_scan_force_bastp&quot;
+android:layout_width=&quot;wrap_content&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:text=&quot;@string/media_scan_force_bastp&quot; /&gt;
+
+&lt;TextView
+style=&quot;?android:attr/listSeparatorTextViewStyle&quot;
+android:textColor=&quot;?overlay_foreground_color&quot;
+
+android:text=&quot;@string/media_folders_header&quot; /&gt;
+
+&lt;TextView
+android:id=&quot;@+id/media_directories&quot;
+android:layout_width=&quot;match_parent&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:text=&quot;@string/empty&quot; /&gt;
+
+&lt;Button
+android:id=&quot;@+id/edit_button&quot;
+android:layout_width=&quot;wrap_content&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:layout_gravity=&quot;end&quot;
+android:text=&quot;@string/edit&quot;&gt;
+&lt;/Button&gt;
+
+&lt;TextView
+style=&quot;?android:attr/listSeparatorTextViewStyle&quot;
+android:textColor=&quot;?overlay_foreground_color&quot;
+android:text=&quot;@string/media_scan_header&quot; /&gt;
+
+&lt;CheckBox android:id=&quot;@+id/media_scan_full&quot;
+android:layout_width=&quot;wrap_content&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:text=&quot;@string/media_scan_full&quot; /&gt;
+
+&lt;Button
+android:id=&quot;@+id/start_button&quot;
+android:layout_width=&quot;wrap_content&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:layout_gravity=&quot;end&quot;
+android:text=&quot;@string/media_scan_start&quot;&gt;
+&lt;/Button&gt;
+
+&lt;TextView
+style=&quot;?android:attr/listSeparatorTextViewStyle&quot;
+android:textColor=&quot;?overlay_foreground_color&quot;
+android:text=&quot;@string/media_statistics&quot; /&gt;
+
+&lt;TableLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+android:layout_width=&quot;match_parent&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:stretchColumns=&quot;1&quot;&gt;
+&lt;TableRow&gt;
+&lt;TextView
+android:text=&quot;@string/media_stats_tracks&quot;
+android:padding=&quot;3dip&quot; /&gt;
+&lt;TextView
+android:id=&quot;@+id/media_stats_tracks&quot;
+android:text=&quot;@string/empty&quot;
+android:gravity=&quot;right&quot;
+android:padding=&quot;3dip&quot; /&gt;
+&lt;/TableRow&gt;
+&lt;TableRow&gt;
+&lt;TextView
+android:text=&quot;@string/media_stats_library_playtime&quot;
+android:padding=&quot;3dip&quot; /&gt;
+&lt;TextView
+android:text=&quot;@string/empty&quot;
+android:id=&quot;@+id/media_stats_library_playtime&quot;
+android:gravity=&quot;right&quot;
+android:padding=&quot;3dip&quot; /&gt;
+&lt;/TableRow&gt;
+&lt;TableRow&gt;
+&lt;TextView
+android:text=&quot;@string/media_stats_listen_playtime&quot;
+android:padding=&quot;3dip&quot; /&gt;
+&lt;TextView
+
+android:text=&quot;@string/empty&quot;
+android:id=&quot;@+id/media_stats_listen_playtime&quot;
+android:gravity=&quot;right&quot;
+android:padding=&quot;3dip&quot; /&gt;
+&lt;/TableRow&gt;
+&lt;/TableLayout&gt;
+
+&lt;Button
+android:id=&quot;@+id/cancel_button&quot;
+android:layout_width=&quot;wrap_content&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:layout_gravity=&quot;end&quot;
+android:text=&quot;@android:string/cancel&quot;&gt;
+&lt;/Button&gt;
+
+&lt;ProgressBar
+android:id=&quot;@+id/media_stats_progress_bar&quot;
+android:paddingTop=&quot;24dp&quot;
+android:layout_width=&quot;match_parent&quot;
+android:layout_height=&quot;match_parent&quot;
+style=&quot;?android:attr/progressBarStyleHorizontal&quot; /&gt;
+
+&lt;TextView
+android:id=&quot;@+id/media_stats_progress_text&quot;
+android:layout_width=&quot;match_parent&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:minLines=&quot;3&quot;
+android:text=&quot;@string/empty&quot; /&gt;
+&lt;/LinearLayout&gt;
+
+&lt;/ScrollView&gt;
+
+XML CODE FOR PERMISSION REQUEST
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+
+&lt;TableLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+android:clickable=&quot;true&quot;
+android:layout_width=&quot;fill_parent&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:stretchColumns=&quot;0&quot;
+android:shrinkColumns=&quot;0&quot;
+android:paddingTop=&quot;8dip&quot;
+android:paddingBottom=&quot;8dip&quot;
+android:background=&quot;#FF212121&quot;&gt;
+&lt;TableRow&gt;
+&lt;TextView
+android:id=&quot;@+id/permission_request_title&quot;
+android:layout_marginLeft=&quot;8dip&quot;
+android:layout_marginBottom=&quot;8dip&quot;
+android:layout_marginTop=&quot;8dip&quot;
+android:text=&quot;Music player needs permission from device&quot;
+android:textColor=&quot;#FFFFFFFF&quot; /&gt;
+&lt;Button
+android:id=&quot;@+id/permission_request_button&quot;
+android:clickable=&quot;false&quot;
+android:layout_marginRight=&quot;8dip&quot;
+android:layout_gravity=&quot;center&quot;
+android:text=&quot;@android:string/ok&quot; /&gt;
+&lt;/TableRow&gt;
+&lt;/TableLayout&gt;
+
+
+XML CODE FOR PLAYLIST BUTTONS
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+
+&lt;LinearLayout
+xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+android:layout_width=&quot;fill_parent&quot;
+android:layout_height=&quot;fill_parent&quot;
+android:padding=&quot;3dip&quot;
+android:orientation=&quot;horizontal&quot;&gt;
+&lt;Button
+android:id=&quot;@+id/edit&quot;
+android:layout_width=&quot;0px&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:layout_weight=&quot;1&quot;
+android:text=&quot;@string/edit&quot; /&gt;
+&lt;Button
+android:id=&quot;@+id/delete&quot;
+android:layout_width=&quot;0px&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:layout_weight=&quot;1&quot;
+android:text=&quot;@string/delete&quot; /&gt;
+&lt;/LinearLayout&gt;

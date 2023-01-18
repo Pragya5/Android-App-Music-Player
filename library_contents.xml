@@ -1,0 +1,100 @@
+
+
+XML CODE FOR LIBRARY CONTENTS
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;merge xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+xmlns:vanilla=&quot;http://schemas.android.com/apk/res-auto&quot; &gt;
+&lt;LinearLayout
+android:id=&quot;@+id/content&quot;
+android:orientation=&quot;vertical&quot;
+android:layout_width=&quot;fill_parent&quot;
+android:layout_height=&quot;fill_parent&quot;&gt;
+&lt;android.support.iosched.tabs.VanillaTabLayout
+android:id=&quot;@+id/sliding_tabs&quot;
+android:layout_width=&quot;match_parent&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:elevation=&quot;4dp&quot;
+android:background=&quot;?tabs_background&quot; /&gt;
+&lt;android.support.v4.view.ViewPager
+android:id=&quot;@+id/pager&quot;
+android:layout_width=&quot;fill_parent&quot;
+android:layout_height=&quot;0px&quot;
+android:layout_weight=&quot;1&quot; /&gt;
+&lt;HorizontalScrollView
+android:id=&quot;@+id/limiter_scroller&quot;
+android:layout_width=&quot;fill_parent&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:layout_gravity=&quot;bottom|left&quot;&gt;
+&lt;LinearLayout
+android:id=&quot;@+id/limiter_layout&quot;
+android:orientation=&quot;horizontal&quot;
+android:layout_width=&quot;wrap_content&quot;
+android:layout_height=&quot;fill_parent&quot; /&gt;
+&lt;/HorizontalScrollView&gt;
+
+
+&lt;/LinearLayout&gt;
+&lt;ch.blinkenlights.android.glazba.SlidingView
+android:id=&quot;@+id/sliding_view&quot;
+android:layout_width=&quot;fill_parent&quot;
+android:layout_height=&quot;fill_parent&quot;
+android:layout_gravity=&quot;bottom|left&quot;
+android:orientation=&quot;horizontal&quot;
+vanilla:slider_handle_id=&quot;@+id/bottombar_controls&quot;
+vanilla:slider_slave_id=&quot;@+id/content&quot;&gt;
+&lt;LinearLayout
+android:layout_height=&quot;wrap_content&quot;
+android:layout_width=&quot;fill_parent&quot;
+android:background=&quot;?overlay_background_color&quot;
+android:orientation=&quot;horizontal&quot;&gt;
+&lt;include layout=&quot;@layout/bottombar_controls&quot;
+android:id=&quot;@+id/bottombar_controls&quot; /&gt;
+&lt;/LinearLayout&gt;
+
+&lt;LinearLayout
+android:layout_height=&quot;wrap_content&quot;
+android:layout_width=&quot;fill_parent&quot;
+android:layout_gravity=&quot;top&quot;
+android:background=&quot;?overlay_background_color&quot;
+android:elevation=&quot;2dp&quot;
+android:orientation=&quot;horizontal&quot;&gt;
+&lt;TextView
+android:id=&quot;@+id/elapsed&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:layout_width=&quot;wrap_content&quot;
+android:layout_gravity=&quot;center&quot;
+android:paddingLeft=&quot;5dip&quot; /&gt;
+&lt;SeekBar
+android:id=&quot;@+id/seek_bar&quot;
+
+
+android:layout_height=&quot;wrap_content&quot;
+android:layout_width=&quot;0px&quot;
+android:layout_gravity=&quot;center&quot;
+android:paddingTop=&quot;5dip&quot;
+android:paddingBottom=&quot;5dip&quot;
+android:paddingLeft=&quot;18dip&quot;
+android:paddingRight=&quot;18dip&quot;
+android:layout_weight=&quot;1&quot; /&gt;
+&lt;TextView
+android:id=&quot;@+id/duration&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:layout_width=&quot;wrap_content&quot;
+android:layout_gravity=&quot;center&quot;
+android:paddingRight=&quot;5dip&quot; /&gt;
+&lt;/LinearLayout&gt;
+
+&lt;LinearLayout
+android:layout_height=&quot;wrap_content&quot;
+android:layout_width=&quot;fill_parent&quot;
+android:background=&quot;?overlay_background_color&quot;
+android:orientation=&quot;horizontal&quot;
+android:elevation=&quot;2dp&quot;&gt;
+&lt;include layout=&quot;@layout/controls&quot; /&gt;
+&lt;/LinearLayout&gt;
+
+&lt;fragment class=&quot;ch.blinkenlights.android.glazba.ShowQueueFragment&quot;
+android:id=&quot;@+id/queue&quot;
+android:layout_width=&quot;596dp&quot; android:layout_height=&quot;fill_parent&quot; /&gt;
+&lt;/ch.blinkenlights.android.glazba.SlidingView&gt;
+&lt;/merge&gt;

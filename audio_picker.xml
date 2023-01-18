@@ -1,0 +1,78 @@
+XML CODE FOR AUDIO PICKER
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+
+&lt;LinearLayout
+xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+android:divider=&quot;?android:attr/dividerHorizontal&quot;
+android:showDividers=&quot;middle&quot;
+android:orientation=&quot;vertical&quot;
+android:layout_width=&quot;fill_parent&quot;
+android:layout_height=&quot;wrap_content&quot;&gt;
+
+&lt;LinearLayout
+android:layout_width=&quot;fill_parent&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:orientation=&quot;horizontal&quot;&gt;
+
+&lt;ImageView android:id=&quot;@+id/icon&quot;
+android:layout_width=&quot;wrap_content&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:layout_gravity=&quot;top&quot;
+android:layout_marginLeft=&quot;4dip&quot;
+android:layout_marginTop=&quot;2dip&quot;
+android:layout_marginBottom=&quot;2dip&quot;
+android:src=&quot;@drawable/icon&quot; /&gt;
+&lt;TextView
+android:id=&quot;@+id/filepath&quot;
+android:visibility=&quot;gone&quot;
+android:layout_width=&quot;fill_parent&quot;
+
+android:layout_height=&quot;wrap_content&quot;
+android:layout_marginBottom=&quot;16dip&quot;
+android:layout_marginTop=&quot;16dip&quot;
+android:layout_marginLeft=&quot;16dip&quot;
+android:layout_marginRight=&quot;8dip&quot; /&gt;
+&lt;ProgressBar
+android:id=&quot;@+id/progress&quot;
+android:layout_width=&quot;fill_parent&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:layout_gravity=&quot;center_vertical|center_horizontal&quot; /&gt;
+&lt;/LinearLayout&gt;
+
+&lt;LinearLayout
+style=&quot;?android:attr/buttonBarStyle&quot;
+android:layout_width=&quot;fill_parent&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:orientation=&quot;horizontal&quot;&gt;
+&lt;Button
+style=&quot;?android:attr/buttonBarButtonStyle&quot;
+android:id=&quot;@+id/cancel&quot;
+android:layout_width=&quot;0px&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:layout_weight=&quot;1&quot;
+android:text=&quot;@android:string/cancel&quot;
+android:enabled=&quot;false&quot;
+android:singleLine=&quot;true&quot; /&gt;
+&lt;Button
+style=&quot;?android:attr/buttonBarButtonStyle&quot;
+android:id=&quot;@+id/enqueue&quot;
+android:layout_width=&quot;0px&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:layout_weight=&quot;1&quot;
+android:text=&quot;@string/enqueue&quot;
+android:enabled=&quot;false&quot;
+
+
+android:singleLine=&quot;true&quot; /&gt;
+&lt;Button
+style=&quot;?android:attr/buttonBarButtonStyle&quot;
+android:id=&quot;@+id/play&quot;
+android:layout_width=&quot;0px&quot;
+android:layout_height=&quot;wrap_content&quot;
+android:layout_weight=&quot;1&quot;
+android:text=&quot;@string/play&quot;
+android:enabled=&quot;false&quot;
+android:singleLine=&quot;true&quot; /&gt;
+&lt;/LinearLayout&gt;
+&lt;/LinearLayout&gt;
